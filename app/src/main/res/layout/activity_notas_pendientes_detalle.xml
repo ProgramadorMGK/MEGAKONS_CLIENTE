@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotasPendientesDetalleActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojoMGK"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_volver_atras_blanco"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:id="@+id/contenedorPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E9F3F3F3"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rojonegroespectro"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rotulomgk"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/nppNombreCliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/belleza"
+                android:gravity="center_horizontal"
+                android:text="CLIENTE FERRETERO MEGAKONS S.A. - NOTAS PEDIDOS"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nppIdCliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:text="CLIENTE: 505215"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nppNombreCliente" />
+
+            <TextView
+                android:id="@+id/nppFechaNP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:text="FECHA: 01/03/2021 00:00:00"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/nppIdCliente"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nppIdCliente" />
+
+            <TextView
+                android:id="@+id/nppEstadoNP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:text="ESTADO: VIGENTE"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nppFechaNP" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="3dp"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                >
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="#29CD30">
+
+                    <TextView
+                        android:id="@+id/tvpedido"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/poppins_r"
+                        android:gravity="center"
+                        android:text="Total Pedido"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nppTotalNP"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tvpedido"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/amiko_bold"
+                        android:gravity="center"
+                        android:text="$ 10000.00"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="#E83232">
+
+                    <TextView
+                        android:id="@+id/tvperdido"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/poppins_r"
+                        android:gravity="center"
+                        android:text="Total Perdido"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nppTotalNPP"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tvperdido"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/amiko_bold"
+                        android:gravity="center"
+                        android:text="$ 10000.00"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4,5"
+        android:layout_margin="8dp"
+
+        >
+        <TextView
+            android:id="@+id/nppNumeroNP"
+            android:text="NOTA DE PEDIDO 1555525"
+            android:textSize="15sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TableRow
+            android:background="@color/graylight"
+            android:padding="1dp"
+            >
+            <TextView
+                android:text="CODIGO"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="1"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text="ARTÍCULO"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="2"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text="PEDIDO"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="3"
+                android:layout_margin="1dp"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text="PERDIDO"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="4"
+                android:layout_margin="1dp"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text="COSTO"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="4"
+                android:layout_margin="1dp"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="-8.5dp"
+        android:id="@+id/rv_detalleNotasPedidoPendientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:stretchColumns="1,2,3,4,5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <TableRow
+            android:background="@color/black"
+            android:padding="1dp"
+            >
+            <TextView
+                android:text="TOTAL PERDIDO"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="1"
+                android:background="@color/graylight"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text=""
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="2"
+                android:background="@color/graylight"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text=""
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="3"
+                android:background="@color/graylight"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:text=""
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="4"
+                android:background="@color/graylight"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/nppTotalNPPerdido"
+                android:text="100000.00"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_column="5"
+                android:background="@color/white"
+                android:textColor="@color/rojoMGK"
+                android:textAlignment="textEnd"
+                android:paddingEnd="15dp"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4"
+        android:layout_margin="8dp"
+        >
+        <TextView
+            android:text="NOTA PEDIDO POR PERDIDAS"
+            android:textSize="15sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TableRow
+            android:background="@color/graylight"
+            android:padding="1dp"
+            >
+            <TextView
+                android:text="ARTÍCULO"
+                android:layout_width="120dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:text="FACTURA"
+                android:layout_width="40dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="2"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:text="PERDIDO"
+                android:layout_width="40dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="3"
+                android:layout_margin="1dp"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:text="SUBT."
+                android:layout_width="40dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="4"
+                android:layout_margin="1dp"
+                android:background="@color/rojoMGK"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detalleNotasPedido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </TableLayout>-->
+
+</LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

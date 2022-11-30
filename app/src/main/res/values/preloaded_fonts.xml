@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/amethysta</item>
+        <item>@font/amiko_bold</item>
+        <item>@font/antic</item>
+        <item>@font/baloo</item>
+        <item>@font/bangers</item>
+        <item>@font/bungee</item>
+        <item>@font/poppins</item>
+        <item>@font/ramabhadra</item>
+        <item>@font/scada_bold</item>
+    </array>
+</resources>

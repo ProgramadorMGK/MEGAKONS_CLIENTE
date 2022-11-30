@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Principal">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:title="Menu Principal"
+                    android:icon="@drawable/menublancoynegro" />
+
+                <item
+                    android:id="@+id/nav_pagina_web"
+                    android:title="Página Web"
+                    android:icon="@drawable/mapablancoynegro"
+                    android:visible="false"
+                    />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Artículos">
+            <menu>
+                <item
+                    android:id="@+id/nav_productos"
+                    android:title="Catálogo"
+                    android:icon="@drawable/herramientasblancoynegro" />
+                <item
+                    android:id="@+id/nav_listaTotalArticulos"
+                    android:title="Lista Total Artículos"
+                    android:icon="@drawable/caja_de_herramientas"
+                    android:visible="false"
+                    />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Gestión">
+            <menu>
+                <item
+                    android:id="@+id/nav_gestion_cobranza"
+                    android:title="Gestión Cobranza"
+                    android:icon="@drawable/notaspendienteblancoynegro" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:visible="false" android:checkableBehavior="single">
+
+        <item android:title="Notas de Pedido">
+            <menu>
+                <item
+                    android:id="@+id/nav_notaspendientes"
+                    android:title="Notas Pendientes"
+                    android:icon="@drawable/notaspendienteblancoynegro" />
+            </menu>
+        </item>
+
+    </group>
+    <group  android:visible="false" android:checkableBehavior="single">
+
+        <item android:title="Clientes">
+            <menu>
+                <item
+                    android:id="@+id/nav_clientes"
+                    android:title="Cartera Clientes"
+                    android:icon="@drawable/clientes_blanco_negro" />
+            </menu>
+        </item>
+
+    </group>
+    <group  android:visible="false" android:checkableBehavior="single">
+
+        <item android:title="Ventas">
+            <menu>
+                <item
+                    android:id="@+id/nav_Kpis"
+                    android:title="KPIs Ventas"
+                    android:icon="@drawable/kpi_blanco_negro" />
+                <item
+                    android:id="@+id/nav_Documentos"
+                    android:title="Documentos"
+                    android:icon="@drawable/documento_blanco_negro" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:visible="false" android:checkableBehavior="single">
+
+        <item android:title="Perfil">
+            <menu>
+                <item
+                    android:id="@+id/nav_cerrarsesion"
+                    android:title="Cerrar Sesión"
+                    android:icon="@drawable/cerrarsesion" />
+            </menu>
+        </item>
+
+    </group>
+
+
+</menu>

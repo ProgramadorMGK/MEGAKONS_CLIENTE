@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="alias"><b>Alias Web:</b> </string>
+    <string name="marca"><b>Marca:</b> </string>
+    <string name="modelo"><b>Modelo:</b> </string>
+    <string name="existencia"><b>Existencia:</b> </string>
+    <string name="costo"><b>Costo:</b> $ </string>
+    <string name="descuento"><b>Descuento:</b> </string>
+    <string name="mi_mensaje"><b>mundo</b>,<b>Pepe</b></string>
+
+</resources>

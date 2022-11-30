@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemNavigationViewDocumentosClientes"
+        android:title="Documentos"
+        android:icon="@drawable/factura_blanco_negro"/>
+
+    <item
+        android:id="@+id/itemNavigationViewAnticipos"
+        android:title="Anticipos"
+        android:icon="@drawable/anticipo_blanco_negro"
+        />
+
+</menu>

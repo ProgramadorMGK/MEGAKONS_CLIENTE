@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/imagenProductoModal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@color/black" />
+
+    <TextView
+        android:id="@+id/nombreProductoModal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTO XYZ"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imagenProductoModal"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>

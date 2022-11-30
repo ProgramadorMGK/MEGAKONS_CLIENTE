@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KPIsPresupuestoGeneral"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rojoMGK"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_volver_atras_blanco"
+            app:titleTextColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/contenedorPantallaKPISPresupuestoGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#E9F3F3F3"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        app:cardCornerRadius="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rojonegroespectro"
+                            android:orientation="horizontal"
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/rotulomgk"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/pgOficinaVendedores"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/belleza"
+                            android:gravity="center_horizontal"
+                            android:text="PRESUPUESTOS OFICINA AMBATO"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pgCodigoOficina"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="Código: 001"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pgOficinaVendedores" />
+
+                        <TextView
+                            android:id="@+id/pgFechaInicialFinal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="FECHA: 01/01/2022 - 31/01/2022"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="@+id/pgCodigoOficina"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pgCodigoOficina" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            app:cardElevation="3dp"
+                            android:layout_width="400dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/black"
+                                >
+
+                                <RelativeLayout
+                                    android:layout_width="195dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="#29CD30">
+
+                                    <TextView
+                                        android:id="@+id/tvCumplimientoEstimado"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/poppins_r"
+                                        android:gravity="center"
+                                        android:text="Cumplimiento General"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/gray"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/pgCumplimientoGeneral"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_below="@+id/tvCumplimientoEstimado"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/amiko_bold"
+                                        android:gravity="center"
+                                        android:text="$ 10000.00"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="195dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="#E83232">
+
+                                    <TextView
+                                        android:id="@+id/tvCumplimientoGeneral"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/poppins_r"
+                                        android:gravity="center"
+                                        android:text="Cumplimiento Estimado"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/gray"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/pgCumplimientoEstimado"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:layout_below="@+id/tvCumplimientoGeneral"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/amiko_bold"
+                                        android:gravity="center"
+                                        android:text="$ 10000.00"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3,4,5,6"
+                    android:layout_margin="8dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/plCabeceraTablaPresupuestos"
+                        android:text="PRESUPUESTOS GENERAL"
+                        android:textSize="15sp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+                    <TableRow
+                        android:background="@color/graylight"
+                        android:padding="1dp"
+                        >
+                        <TextView
+                            android:text="CODIGO"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="1"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:layout_margin="1dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                        <TextView
+                            android:text="VENDEDOR"
+                            android:layout_width="135dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="2"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:layout_margin="1dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                        <TextView
+                            android:text="PRESUPUESTO"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="3"
+                            android:layout_margin="1dp"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                        <TextView
+                            android:text="VENTAS NETAS"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="4"
+                            android:layout_margin="1dp"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                        <TextView
+                            android:text="CUMPLIMIENTO"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="5"
+                            android:layout_margin="1dp"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                        <TextView
+                            android:text="RENTABILIDAD"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_column="6"
+                            android:layout_margin="1dp"
+                            android:background="@color/rojoMGK"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-8.5dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_KPISVentasPresupuestoGeneral"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:nestedScrollingEnabled="false" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>

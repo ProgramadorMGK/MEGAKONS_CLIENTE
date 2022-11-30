@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemNavigationViewAbonos"
+        android:title="Abonos"
+        android:icon="@drawable/dinero_blanco_negro"/>
+
+    <item
+        android:id="@+id/itemNavigationViewCheques"
+        android:title="Cheques"
+        android:icon="@drawable/cheque_blanco_negro"
+        />
+
+    <item
+        android:id="@+id/itemNavigationViewDetalleFactura"
+        android:title="Detalle"
+        android:icon="@drawable/factura_blanco_negro"
+        />
+
+</menu>

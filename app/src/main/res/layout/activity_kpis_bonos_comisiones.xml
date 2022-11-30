@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KPIsBonosComisionesAC"
+        android:orientation="vertical"
+        android:background="@color/transparente"
+        android:id="@+id/contenedorPantalla"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rojoMGK"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_volver_atras_blanco"
+            app:titleTextColor="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:background="@color/graylight2"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/megakons"
+                    android:background="@drawable/btn_disenio5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_kpis_bonos_comisiones_ac_rango_vendedor"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/z_layout_textview_18_junior_c"
+        android:fontFamily="@font/patua_one"
+        android:text="NINGUNO"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/z_layout_textview9"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Vendedor: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_kpis_bonos_comisiones_ac_nombre_vendedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="NOMBRE1 NOMBRE2 APELLIDO1 APELLIDO2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/z_layout_textview9"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Fecha: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <TextView
+                android:id="@+id/tv_kpis_bonos_comisiones_ac_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="01 / 04 / 2022 - 30 / 04 / 2022"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kpis_bonos_comisiones_ac_nombre_vendedor" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/z_layout_textview9"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Oficina: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_kpis_bonos_comisiones_ac_oficina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="001 - Ambato"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kpis_bonos_comisiones_ac_fecha" />
+
+            <Button
+                android:id="@+id/btn_kpis_bonos_comisiones_ac_bonos"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/btn_disenio6"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_kpis_bonos_comisiones_ac_oficina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kpis_bonos_comisiones_ac_nombre_vendedor" />
+
+            <Button
+                android:id="@+id/btn_kpis_bonos_comisiones_ac_articulos_baja_rotacion"
+                android:visibility="gone"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/btn_disenio6"
+                android:text="Baja Rotación"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_kpis_bonos_comisiones_ac_bonos" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kpis_bonos_comisiones_ac_oficina">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Rentabilidad"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_rentabilidad"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView5"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView05"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView5"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_rentabilidad_bono"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView05"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_rentabilidad"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_rentabilidad"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="RENTABILIDAD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Ventas"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_ventas"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView6"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Presupuesto"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_presupuesto"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_ventas"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Cumplimiento"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout9"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_presupuesto"
+                    android:layout_below="@+id/textView10"
+                    >
+
+                    <ProgressBar
+                        android:id="@+id/pg_kpis_bonos_comisiones_ac_CumplimientoBarraProgreso"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:background="#0078AF"
+                        android:progressDrawable="@drawable/custom_background_progress_dialog_1"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_kpis_bonos_comisiones_ac_cumplimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center_vertical"
+                        android:text="0,00%"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView010"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView10"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_cumplimiento_bono"
+                    android:layout_width="@dimen/_76sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView010"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/relativeLayout9"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="@dimen/_304sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_presupuesto"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="CUMPLIMIENTO GENERAL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Cartera V."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_cartera_vencida"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView13"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="0,00%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView13"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_cartera_vencida_bono"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView14"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_cartera_vencida"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_cartera_vencida"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="CARTERA VENCIDA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Cartera D."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_cartera_documentada"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView15"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="0,00%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView15"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_cartera_documentada_bono"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView16"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_cartera_documentada"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_cartera_documentada"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="CARTERA DOCUMENTADA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Items"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_items"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView17"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView17"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_items_bonos"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView18"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_items"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_items_bonos"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="ITEMS VENDIDOS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Items BR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_cantidad"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView27"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView27"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Ventas"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_venta"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView28"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_cantidad"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bono"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_bono"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/textView29"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_venta"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_below="@+id/tv_kpis_bonos_comisiones_ac_items_baja_rotacion_venta"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/rojoMGK1"
+                    android:gravity="center"
+                    android:text="ITEMS DE BAJA ROTACION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout10">
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="Bonos por cumplimiento"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_bono"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView19"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_presupuesto_lineas_informacion"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/textView21"
+                    android:src="@drawable/comision" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/basic"
+                    android:gravity="center"
+                    android:text="PRESUPUESTO POR LÍNEAS"
+                    android:textColor="@color/rojoMGK1"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:stretchColumns="1,2,3,4,5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relative2">
+
+                <TableRow android:padding="1dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/_50sdp"
+                        android:textSize="@dimen/_6sdp"
+                        android:layout_column="1"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/z_layout_textview19"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="DESCRIPCIÓN"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:layout_width="@dimen/_8sdp"
+                        android:textSize="@dimen/_6sdp"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/z_layout_textview19"
+                        android:gravity="center_vertical"
+                        android:text="PRESUPUESTO"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:layout_width="@dimen/_8sdp"
+                        android:textSize="@dimen/_6sdp"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/z_layout_textview19"
+                        android:gravity="center_vertical"
+                        android:text="VENTAS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:layout_width="@dimen/_3sdp"
+                        android:textSize="@dimen/_5sdp"
+                        android:layout_height="match_parent"
+                        android:layout_column="4"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/z_layout_textview19"
+                        android:gravity="center_vertical"
+                        android:text="CUMPLIMIENTO"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:layout_width="@dimen/_4sdp"
+                        android:textSize="@dimen/_6sdp"
+                        android:layout_height="match_parent"
+                        android:layout_column="5"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/z_layout_textview19"
+                        android:gravity="center_vertical"
+                        android:text="BONO"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_kpis_bonos_comisiones_ac_presupuesto_lineas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:stretchColumns="1,2"
+                app:layout_constraintTop_toBottomOf="@+id/rv_kpis_bonos_comisiones_ac_presupuesto_lineas"
+                tools:layout_editor_absoluteX="8dp">
+
+                <TableRow
+                    android:background="@color/black"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:background="@color/graylight"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Total bonos por presupuestos de líneas: "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_kpis_presupuesto_lineas_ac_bono"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingEnd="15dp"
+                        android:text="$ 0,00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/rojoMGK"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="COMISIONES"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView22"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="Ventas netas"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_ventas_comisiones"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView22"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView23"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/rojoMGK1"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView23"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="Ventas hierro"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_ventas_comisiones_hierro"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView23"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView24"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/rojoMGK1"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView24"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="Ventas cemento"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_ventas_comisiones_cemento"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView24"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/textView25"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/rojoMGK1"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/textView25"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/z_layout_textview20">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_9sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center"
+                        android:text="Total comision"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_kpis_bonos_comisiones_ac_ventas_total_comisiones"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_below="@+id/textView26"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center"
+                        android:text="$ 0,00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout8">
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/z_layout_textview19"
+                    android:gravity="center"
+                    android:text="BONO + COMISION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_kpis_bonos_comisiones_ac_total_bono_y_comision"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/textView20"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/z_layout_textview8"
+                    android:gravity="center"
+                    android:text="$ 0,00"
+                    android:textColor="@color/rojoMGK1"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

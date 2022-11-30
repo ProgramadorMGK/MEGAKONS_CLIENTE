@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+card_view:cardElevation="4dp"
+card_view:cardUseCompatPadding="true"
+android:background="@color/graylight"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EDEDED"
+    >
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView2"
+    android:layout_width="25dp"
+    android:layout_height="30dp"
+    android:textAlignment="center"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    card_view:layout_constraintStart_toStartOf="parent"
+    card_view:layout_constraintTop_toTopOf="parent" >
+
+    <ImageView
+        android:id="@+id/imgTipoDocumentoCCDetalle"
+        android:layout_width="25dp"
+        android:layout_gravity="center"
+        android:layout_height="25dp"
+        android:src="@drawable/factura"/>
+
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTipoDocumentoCCDetalle"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amethysta"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="FC-003002-22400"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toEndOf="@+id/cardView2"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEstadoDocumentoCCDetalle"
+        android:layout_width="150dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/amethysta"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="VIGENTE"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toEndOf="@+id/cardView2"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvTipoDocumentoCCDetalle" />
+
+    <TextView
+        android:id="@+id/plcbid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/calendario_visto"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/tvFechaEmisionCCDetalle"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amethysta"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:text="Fecha Emi: 31/06/2022"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        card_view:layout_constraintStart_toEndOf="@+id/imageView3"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvEstadoDocumentoCCDetalle" />
+
+    <ImageView
+        android:id="@+id/imgCalendarioCCDetalle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/calendario_reloj_izquierda"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/tvFechaVencimientoCCDetalle"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amethysta"
+        android:gravity="center_vertical"
+        android:textAlignment="textEnd"
+        android:inputType="textMultiLine"
+        android:paddingRight="10dp"
+        android:text="Fecha Ven: 31/06/2022"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        card_view:layout_constraintEnd_toStartOf="@+id/imgCalendarioCCDetalle"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvEstadoDocumentoCCDetalle"
+        tools:ignore="RtlCompat" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/z_layout_textview8"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/imgRelojAlertaCCDetalle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/reloj_correcto" />
+
+            <TextView
+                android:id="@+id/tvDiasFaltantesCCDetalle"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/imgRelojAlertaCCDetalle"
+                android:fontFamily="@font/amethysta"
+                android:gravity="center"
+                android:text="Dias Sobrepasados: 3360"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        card_view:cardElevation="2dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvFechaEmisionCCDetalle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rojoMGK">
+
+            <RelativeLayout
+                android:id="@+id/cdd1"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_horizontal"
+                    android:text="Débitos"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDebitosCCDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/amiko_bold"
+                    android:gravity="center_horizontal"
+                    android:text="$ 32970,56"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cdd2"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/cdd1"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_horizontal"
+                    android:text="Créditos"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSaldosCCDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/amiko_bold"
+                    android:gravity="center_horizontal"
+                    android:text="$ 20500,00"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cdd3"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/cdd2"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_horizontal"
+                    android:text="Saldos"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCreditosCCDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/amiko_bold"
+                    android:gravity="center_horizontal"
+                    android:text="$ 20500,00"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cdd4"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/cdd3"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_horizontal"
+                    android:text="Ch. Post."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvChequesPostfechadosCCDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/amiko_bold"
+                    android:gravity="center_horizontal"
+                    android:text="$ 20500,00"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llDetalleCarteraCliente_btnsDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/cardView4"
+        >
+
+        <Button
+            android:id="@+id/btnDetalleCarteraCliente_DetalleFactura"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Ver detalle de factura"
+            android:textSize="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/btnDetalleCarteraCliente_DetallePago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Ver detalle de pago"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

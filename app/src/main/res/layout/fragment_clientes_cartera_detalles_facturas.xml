@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context="fragments.ClientesCarteraDetallesChequesFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalle de factura"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/rojoMGK"
+        android:fontFamily="@font/poppins_r"
+        android:textAlignment="center"
+        android:layout_marginVertical="@dimen/_2sdp"
+        />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        android:padding="@dimen/_1sdp"
+        >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:background="@color/black"
+        android:stretchColumns="1,2,3,4">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:text="Código"
+                android:gravity="center"
+                android:background="#EFEFEF"
+                android:textColor="@color/rojoMGK"
+                android:textSize="@dimen/_7sdp"
+                android:fontFamily="@font/amethysta"
+                android:layout_column="1"
+                android:layout_marginVertical="1dp"
+                android:layout_marginHorizontal="1dp"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:text="Nombre"
+                android:gravity="center"
+                android:background="#EFEFEF"
+                android:textColor="@color/rojoMGK"
+                android:textSize="@dimen/_7sdp"
+                android:fontFamily="@font/amethysta"
+                android:layout_column="2"
+                android:layout_marginVertical="1dp"
+                android:layout_marginRight="1dp"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:text="Cantidad"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="#EFEFEF"
+                android:textColor="@color/rojoMGK"
+                android:textSize="@dimen/_7sdp"
+                android:fontFamily="@font/amethysta"
+                android:layout_column="3"
+                android:layout_marginVertical="1dp"
+                android:layout_marginRight="1dp"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:text="P. Unitario"
+                android:gravity="center"
+                android:background="#EFEFEF"
+                android:textColor="@color/rojoMGK"
+                android:textAlignment="center"
+                android:textSize="@dimen/_7sdp"
+                android:fontFamily="@font/amethysta"
+                android:layout_column="4"
+                android:layout_marginVertical="1dp"
+                android:layout_marginRight="1dp"
+                />
+
+                <TextView
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="match_parent"
+                    android:text="Descuento"
+                    android:background="#EFEFEF"
+                    android:textColor="@color/rojoMGK"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_7sdp"
+                    android:fontFamily="@font/amethysta"
+                    android:layout_marginVertical="1dp"
+                    android:layout_column="5"
+                    android:layout_marginRight="1dp"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/_53sdp"
+                    android:layout_height="match_parent"
+                    android:text="Total"
+                    android:background="#EFEFEF"
+                    android:textColor="@color/rojoMGK"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_7sdp"
+                    android:fontFamily="@font/amethysta"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="1dp"
+                    android:layout_column="6"
+                    android:layout_marginRight="1dp"
+                    />
+
+        </TableRow>
+
+    </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaClientesCarterasDetallesFacturasRV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:background="#346C6C6C"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/baseIva0ClientesCarterasDetallesFacturasTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base IVA 0%: $ 188.20"
+        android:textColor="@color/graylight"
+        android:fontFamily="@font/belleza"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        />
+
+    <TextView
+        android:id="@+id/baseIva12ClientesCarterasDetallesFacturasTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base IVA 12%: $ 188.20"
+        android:textColor="@color/graylight"
+        android:fontFamily="@font/belleza"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        />
+
+    <TextView
+        android:id="@+id/ivaClientesCarterasDetallesFacturasTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IVA 12%: $ 188.20"
+        android:textColor="@color/graylight"
+        android:fontFamily="@font/belleza"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        />
+
+    <TextView
+        android:id="@+id/valorPagarClientesCarterasDetallesFacturasTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor a pagar: $ 188.20"
+        android:textColor="@color/black"
+        android:fontFamily="@font/belleza"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp"
+        />
+
+</LinearLayout>
+
+</FrameLayout>

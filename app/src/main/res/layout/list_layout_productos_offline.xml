@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="120dp"
+                    android:background="@drawable/z_layout_textview2"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvNombreO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/amethysta"
+                        android:gravity="center"
+                        android:text="NOMBRE ARTICULO MEGAKONS S.A. - MATERIALES DE CONSTRUCCION"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/z_layout_textview3"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvCodigoO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="06.TA.CD.ASA.5051"
+                        android:textColor="@color/rojoMGK"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@+id/tvCodigoO">
+
+                        <TableLayout
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:stretchColumns="1,2">
+
+                            <TableRow>
+
+                                <LinearLayout
+                                    android:layout_width="125dp"
+                                    android:layout_height="50dp"
+                                    android:layout_column="1"
+                                    android:layout_marginRight="1dp"
+                                    android:background="@drawable/z_layout_textview4"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:gravity="center"
+                                        android:text="Existencia"
+                                        android:textColor="@color/graylight"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvExistenciaO"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:fontFamily="@font/poppins_r"
+                                        android:gravity="center"
+                                        android:text="6"
+                                        android:textColor="@color/rojoMGK"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="125dp"
+                                    android:layout_height="50dp"
+                                    android:layout_column="2"
+                                    android:layout_marginLeft="1dp"
+                                    android:background="@drawable/z_layout_textview7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:gravity="center"
+                                        android:text="Presentación"
+                                        android:textColor="@color/graylight"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvPresentacionO"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:gravity="center"
+                                        android:text="ROLL"
+                                        android:textColor="@color/rojoMGK"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:stretchColumns="1,2">
+
+                            <TableRow>
+
+                                <LinearLayout
+                                    android:layout_width="125dp"
+                                    android:layout_height="50dp"
+                                    android:layout_column="1"
+                                    android:layout_marginRight="1dp"
+                                    android:background="@drawable/z_layout_textview6"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:gravity="center"
+                                        android:text="U. Medida"
+                                        android:textColor="@color/graylight"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvMedidaO"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:fontFamily="@font/poppins_r"
+                                        android:gravity="center"
+                                        android:text="6"
+                                        android:textColor="@color/rojoMGK"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="125dp"
+                                    android:layout_height="50dp"
+                                    android:layout_column="2"
+                                    android:layout_marginLeft="1dp"
+                                    android:background="@drawable/z_layout_textview5"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:gravity="center"
+                                        android:text="Ubicación"
+                                        android:textColor="@color/graylight"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvUbicacionO"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:fontFamily="@font/poppins_r"
+                                        android:gravity="center"
+                                        android:text="B2"
+                                        android:textColor="@color/rojoMGK"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="12dp"
+                        android:orientation="vertical"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/z_layout_textview2"
+                            android:gravity="center"
+                            android:text="PRECIO"
+                            android:textColor="@color/white"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPrecioO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/autour_one"
+                            android:gravity="center"
+                            android:text="$ 1000,0000"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvDescuentoO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/antic"
+                            android:gravity="center"
+                            android:text="Descuento: 100"
+                            android:textColor="@color/graylight"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCodigoAlternoO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/antic"
+                            android:gravity="center"
+                            android:text="COD A: 100HA.2S5D.S212"
+                            android:textColor="@color/graylight"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

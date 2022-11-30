@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KPIsPresupuestoGeneralDetalles"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojoMGK"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_volver_atras_blanco"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/contenedorPantallaKPISPresupuestoGeneralDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E9F3F3F3"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:cardCornerRadius="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rojonegroespectro"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rotulomgk"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivGeneroVendedor"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/user_vendedor"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/pgdNombreCodigoVendedor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/belleza"
+                        android:gravity="center_horizontal"
+                        android:text="MUÑOZ MUÑOZ DENNIS LEANDRO - MD"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivGeneroVendedor" />
+
+                    <TextView
+                        android:id="@+id/pgdCodigoNombreOficina"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="Ambato - 001"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pgdNombreCodigoVendedor" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        app:cardElevation="3dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:background="#29CD30">
+
+                                <TextView
+                                    android:id="@+id/tvrentabilidad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/poppins_r"
+                                    android:gravity="center"
+                                    android:text="Rentabilidad"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/pgdRentabilidad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/tvrentabilidad"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/amiko_bold"
+                                    android:gravity="center"
+                                    android:text="$ 100 %"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="750dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="25dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/biorhyme_light"
+                                    android:text="Presupuesto"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/pgdPresupuesto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/autour_one"
+                                    android:paddingTop="10dp"
+                                    android:text="$ 1000000,00"
+                                    android:textColor="@color/rojoMGK"
+                                    android:textSize="20sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/biorhyme_light"
+                                    android:text="Ventas Netas"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/pgdVentasNetas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/autour_one"
+                                    android:paddingTop="10dp"
+                                    android:text="$ 1000000,00"
+                                    android:textColor="@color/rojoMGK"
+                                    android:textSize="20sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/biorhyme_light"
+                                    android:text="Promedio Ventas"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/pgdPromedioVentas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/autour_one"
+                                    android:paddingTop="10dp"
+                                    android:text="$ 1000000,00"
+                                    android:textColor="@color/rojoMGK"
+                                    android:textSize="20sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/biorhyme_light"
+                                    android:text="Proyectado"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/pgdProyectado"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/autour_one"
+                                    android:paddingTop="10dp"
+                                    android:text="$ 1000000,00"
+                                    android:textColor="@color/rojoMGK"
+                                    android:textSize="20sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:paddingVertical="10dp"
+                    >
+
+
+                    <com.ramijemli.percentagechartview.PercentageChartView
+                        android:id="@+id/perChartCumplimiento"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/perChartCumplimientoGeneral"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                        app:pcv_animDuration="800"
+                        app:pcv_animInterpolator="anticipate_overshoot"
+                        app:pcv_backgroundColor="#F0E1E1E1"
+                        app:pcv_mode="pie"
+                        app:pcv_orientation="clockwise"
+                        app:pcv_progress="80"
+                        app:pcv_progressColor="#E42727"
+                        app:pcv_startAngle="0"
+                        app:pcv_textColor="@color/black"
+                        app:pcv_textSize="50sp"
+                        app:pcv_textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tvperChartCumplimientoActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Cumplimiento Actual"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintEnd_toStartOf="@+id/perChartCumplimientoGeneral"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/perChartCumplimiento" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="5dp"
+                        app:layout_constraintEnd_toStartOf="@+id/perChartCumplimientoGeneral"
+                        app:layout_constraintStart_toEndOf="@+id/perChartCumplimiento"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/pgdDeficit"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="Déficit: 50%"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.ramijemli.percentagechartview.PercentageChartView
+                        android:id="@+id/perChartCumplimientoGeneral"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                        app:pcv_animDuration="800"
+                        app:pcv_animInterpolator="anticipate_overshoot"
+                        app:pcv_backgroundColor="#F0E1E1E1"
+                        app:pcv_mode="pie"
+                        app:pcv_orientation="clockwise"
+                        app:pcv_progress="60"
+                        app:pcv_progressColor="#E42727"
+                        app:pcv_startAngle="0"
+                        app:pcv_textColor="@color/black"
+                        app:pcv_textSize="50sp"
+                        app:pcv_textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvperChartCumplimientoProyectado"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Cumplimiento estimado a la fecha"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/perChartCumplimientoGeneral" />
+
+                    <com.ramijemli.percentagechartview.PercentageChartView
+                        android:id="@+id/perChartCumplimientoProyectado"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/perChartCumplimientoGeneral"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                        app:pcv_animDuration="800"
+                        app:pcv_animInterpolator="anticipate_overshoot"
+                        app:pcv_backgroundColor="#F0E1E1E1"
+                        app:pcv_mode="pie"
+                        app:pcv_orientation="clockwise"
+                        app:pcv_progress="50"
+                        app:pcv_progressColor="#E42727"
+                        app:pcv_startAngle="0"
+                        app:pcv_textColor="@color/black"
+                        app:pcv_textSize="50sp"
+                        app:pcv_textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvperChartCumplimientoGeneral"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Cumplimiento proyectado según las ventas actuales"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/perChartCumplimientoGeneral"
+                        app:layout_constraintTop_toBottomOf="@+id/perChartCumplimientoProyectado" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

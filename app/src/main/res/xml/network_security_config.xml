@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true" debugBuild="true">
+        <domain includeSubdomains="true">192.168.1.47:921</domain>
+        <domain includeSubdomains="true">web.megakons.com.ec:8080</domain>
+    </domain-config>
+</network-security-config>
